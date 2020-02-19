@@ -24,6 +24,13 @@ devtools::install_github("chris-lundberg/factsetr")
 ## Core Functionality
 
   - **Authenticate:** Authenticate with the `fs_auth` function. This
-    requires a FactSet serial number and API key. You can find your
-    serial number and generate an API key at
-    <https://developer.factset.com/>.
+    requires a FactSet username (i.e. serial number) and API key:
+
+<!-- end list -->
+
+``` r
+fs_con <- fs_auth(username, api_key)
+```
+
+You can find your serial number and generate an API key at
+<https://developer.factset.com/>.
