@@ -1,11 +1,13 @@
-Package: factsetR
+Package: factsetr
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Tidy Access to FactSet's APIs
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
+Authors@R: person("Chris", "Lundberg", email = "chris@deviationstation.io", role = c("aut", "cre"))
 Description: More about what it does (maybe more than one line)
     Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
+Imports: 
+    factset.analyticsapi.engines
+RoxygenNote: 7.0.2

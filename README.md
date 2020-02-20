@@ -23,10 +23,8 @@ devtools::install_github("chris-lundberg/factsetr")
 
 ## Core Functionality
 
-  - **Authenticate:** Authenticate with the `fs_auth` function. This
-    requires a FactSet username (i.e. serial number) and API key:
-
-<!-- end list -->
+**Authenticate:** Authenticate with the `fs_auth` function. This
+requires a FactSet username (i.e. serial number) and API key:
 
 ``` r
 fs_con <- fs_auth(username, api_key)
@@ -34,3 +32,11 @@ fs_con <- fs_auth(username, api_key)
 
 You can find your serial number and generate an API key at
 <https://developer.factset.com/>.
+
+**Search Directories:** Get accounts and Portfolio Analytics or SPAR
+documents with `fs_get`:
+
+``` r
+fs_accounts <- fs_get()
+fs_docs <- fs_get()
+```
