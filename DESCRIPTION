@@ -12,5 +12,6 @@ Imports:
     factset.analyticsapi.engines,
     dplyr,
     tibble,
-    magrittr
+    magrittr,
+    stringr
 RoxygenNote: 7.0.2
