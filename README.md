@@ -34,9 +34,9 @@ You can find your serial number and generate an API key at
 <https://developer.factset.com/>.
 
 **Search Directories:** Get accounts and Portfolio Analytics or SPAR
-documents with `fs_get`:
+documents with `fs_search`:
 
 ``` r
-fs_accounts <- fs_get()
-fs_docs <- fs_get()
+fs_accounts <- fs_search(con, dir, type="account")
+fs_pa_docs <- fs_search(on, dir, type="pa")
 ```
