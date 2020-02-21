@@ -16,7 +16,7 @@
 fs_search <- function(con, dir, type){
 
 
-  if (type = "pa") {
+  if (type == "pa") {
     docs_con <- factset.analyticsapi.engines::DocumentsApi$new(con)
 
     docs <- docs_con$GetPA3Documents(dir)$documents %>%
@@ -25,10 +25,10 @@ fs_search <- function(con, dir, type){
 
     return(docs)
 
-  } else if (type = "spar") {
+  } else if (type == "spar") {
     print("SPAR not implemented yet")
 
-  } else if (type = "dir") {
+  } else if (type == "dir") {
     print("Directory search not implemented yet")
 
   } else {
