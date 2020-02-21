@@ -2,7 +2,7 @@
 % Please edit documentation in R/search.R
 \name{fs_search}
 \alias{fs_search}
-\title{Search your FactSet Filesystem}
+\title{FactSet Filesystem Search}
 \usage{
 fs_search(con, dir, type = c("pa", "spar", "dir", "accounts"))
 }

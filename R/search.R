@@ -1,4 +1,4 @@
-#' Search your FactSet Filesystem
+#' FactSet Filesystem Search
 #'
 #' This function makes it easy to search your FactSet filesystem. It returns a tibble with the accounts, directories, or documents in the specified directory.
 #'
