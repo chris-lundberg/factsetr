@@ -11,5 +11,6 @@ LazyData: true
 Imports: 
     factset.analyticsapi.engines,
     dplyr,
-    tibble
+    tibble,
+    magrittr
 RoxygenNote: 7.0.2

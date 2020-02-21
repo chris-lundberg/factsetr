@@ -44,7 +44,7 @@ You can find your serial number and generate an API key at https://developer.fac
 
 ``` r
 fs_accounts <- fs_search(con, dir, type="account")
-fs_pa_docs <- fs_search(on, dir, type="pa")
+fs_pa_docs <- fs_search(con, dir, type="pa")
 
 ```
 

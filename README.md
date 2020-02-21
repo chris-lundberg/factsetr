@@ -38,5 +38,5 @@ documents with `fs_search`:
 
 ``` r
 fs_accounts <- fs_search(con, dir, type="account")
-fs_pa_docs <- fs_search(on, dir, type="pa")
+fs_pa_docs <- fs_search(con, dir, type="pa")
 ```
