@@ -2,7 +2,10 @@ Package: factsetr
 Type: Package
 Title: Tidy Access to FactSet's APIs
 Version: 0.1.0
-Authors@R: person("Chris", "Lundberg", email = "chris@deviationstation.io", role = c("aut", "cre"))
+URL: https://github.com/chris-lundberg/factsetr
+BugReports: https://github.com/chris-lundberg/factsetr/issues
+Authors@R: c(person("Chris", "Lundberg", email = "chris@deviationstation.io", 
+             role = c("aut", "cre")))
 Description: This package provides a number of functions that wrap functions in FactSet's R SDK.
    The goal of this package is to make it easy to authenticate, search, and retrieve data
    from FactSet's various APIs, including the FactSet Analytics API and the FactSet
@@ -12,9 +15,9 @@ Description: This package provides a number of functions that wrap functions in 
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
-Imports: 
-    factset.analyticsapi.engines,
-    dplyr,
-    tibble,
-    magrittr
+Imports: factset.analyticsapi.engines, dplyr, tibble, magrittr
 RoxygenNote: 7.0.2
+NeedsCompilation: no
+Packaged: 2020-02-22 16:52:58 UTC; clundberg
+Author: Chris Lundberg [aut, cre]
+Maintainer: Chris Lundberg <chris@deviationstation.io>
