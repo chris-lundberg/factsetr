@@ -21,7 +21,7 @@ fs_search <- function(con, dir, type = c("pa", "spar", "dir", "accounts")){
 
     docs <- docs_con$GetPA3Documents(dir)$documents %>%
       unlist() %>% tibble::as_tibble() %>%
-      dplyr::transmute(pa_documents = stringr::str_remove_all(value, '\"'))
+      dplyr::transmute(pa_documents = value)
 
     return(docs)
 
@@ -30,7 +30,7 @@ fs_search <- function(con, dir, type = c("pa", "spar", "dir", "accounts")){
 
     docs <- docs_con$GetSPAR3Documents(dir)$documents %>%
       unlist() %>% tibble::as_tibble() %>%
-      dplyr::transmute(spar_documents = stringr::str_remove_all(value, '\"'))
+      dplyr::transmute(spar_documents = value)
 
   } else if (type == "dir") {
 
@@ -38,7 +38,7 @@ fs_search <- function(con, dir, type = c("pa", "spar", "dir", "accounts")){
 
     accounts <- accounts_con$GetAccounts(dir)$directories %>%
       unlist() %>% tibble::as_tibble() %>%
-      dplyr::transmute(directories = stringr::str_remove_all(value, '\"'))
+      dplyr::transmute(directories = value)
 
   } else if (type == "accounts") {
 
@@ -46,7 +46,7 @@ fs_search <- function(con, dir, type = c("pa", "spar", "dir", "accounts")){
 
     accounts <- accounts_con$GetAccounts(dir)$accounts %>%
       unlist() %>% tibble::as_tibble() %>%
-      dplyr::transmute(accounts = stringr::str_remove_all(value, '\"'))
+      dplyr::transmute(accounts = value)
 
   }
 }

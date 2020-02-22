@@ -3,8 +3,12 @@ Type: Package
 Title: Tidy Access to FactSet's APIs
 Version: 0.1.0
 Authors@R: person("Chris", "Lundberg", email = "chris@deviationstation.io", role = c("aut", "cre"))
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
+Description: This package provides a number of functions that wrap functions in FactSet's R SDK.
+   The goal of this package is to make it easy to authenticate, search, and retrieve data
+   from FactSet's various APIs, including the FactSet Analytics API and the FactSet
+   contents APIs. All functions in this package that retrieve data return a tibble,
+   making it easy to integrate data from the FactSet APIs into existing workflows
+   centered around tidy tools.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
@@ -12,6 +16,5 @@ Imports:
     factset.analyticsapi.engines,
     dplyr,
     tibble,
-    magrittr,
-    stringr
+    magrittr
 RoxygenNote: 7.0.2
